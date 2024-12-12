@@ -3,8 +3,14 @@ import { Card, Button } from "react-bootstrap";
 import "./Players.css";
 
 const Players = (props) => {
+  //Style Inline
+  const cardStyle = {
+    width: '18rem',
+    margin: '10px',
+    textAlign: 'center',
+  };
   return (
-    <Card style={{ width: "18rem", margin: "10px", textAlign: "center" }}>
+    <Card style={cardStyle}>
       <Card.Img
         variant="top"
         src={props.Image}
